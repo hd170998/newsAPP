@@ -90,10 +90,10 @@ class _TarjetaImage extends StatelessWidget {
       child: ClipRRect(
         borderRadius: BorderRadius.only(topLeft: Radius.circular(50), bottomRight: Radius.circular(50)),
         child: Container(
-          child: (noticia.urlToImage !=null)?{
-            FadeInImage
-              (placeholder: AssetImage('assets/giphy.gif'),
-                image: NetworkImage(noticia.urlToImage)),}
+          child: (noticia.urlToImage !=null)
+              ?FadeInImage(
+              placeholder: AssetImage('assets/giphy.gif'),
+                image: NetworkImage(noticia.urlToImage))
             :Image(image: AssetImage('assets/no-image.png'),)
         ),
       ),
